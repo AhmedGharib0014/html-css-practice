@@ -1,0 +1,14 @@
+
+body{
+    background-image: url(images/test.png);
+    background-repeat:no-repeat;
+    background-position: bottom right; 
+    /* background-size:100% 80% ; */
+}
+
+
+div {
+    height: 400px;
+    width: 400px;
+  
+}

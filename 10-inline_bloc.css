@@ -1,0 +1,63 @@
+div {
+    display: inline-block;
+    width: 200px;
+    position: relative;
+    height: 100px;
+    background-color: #FFF;
+    outline: 5px #000000 solid;
+    margin: 50px;
+    text-align: center;    
+    
+}
+
+
+
+.div1 {
+    border: 5px red solid;
+    display: inline-block;
+   
+}
+
+.div2 {
+    border-width: 5px;
+    border-color: blue green;
+    border-style: solid;
+}
+
+
+
+.div3 {
+    border-width: 5px;
+    border-color: red green blue yellow;
+    border-style: dashed;
+}
+
+
+
+.note1 , .note2 , .note3{
+    display: flex;
+    height:50px;
+    margin: 0px 10px;
+    width: 100%;
+    text-align: start;
+    align-content: center;
+    margin: 0 auto;
+    background-color: rgb(201, 193, 193);
+    outline:0px ;  
+}
+.note2{
+    visibility:hidden;
+}
+
+.span1 ,.span2 ,.span3{
+    display: inline-block;
+    width: 10px;
+    height: 40px;
+    background-color: red;
+    margin: 5px;
+}
+
+.span3{
+    background-color: green;
+
+}
