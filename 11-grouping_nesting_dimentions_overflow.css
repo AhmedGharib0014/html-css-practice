@@ -1,0 +1,25 @@
+
+div .child span{
+    color:  red;
+}
+
+div .title{
+color: blue;
+}
+
+
+div p,.title{
+    color: green;
+}
+
+
+.x{
+    background-color: red;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: fit-content;
+    overflow: visible;
+    max-width: 400px;
+    max-height: 20px;
+}
