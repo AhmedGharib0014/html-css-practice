@@ -1,0 +1,180 @@
+.div{
+    height: 100px;
+    width: 100px;
+    /*  */
+    
+}
+
+.black{
+    background-color: black;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 20px;
+    top: 20px;
+    z-index: 0;
+
+}
+
+.blue {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    left: 20px;
+    top: 10px;
+    z-index: 1;
+}
+
+.red {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    z-index: 3;
+    left: 40px;
+    top: 30px;
+}
+.green {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    z-index: 2;
+    left: 30px;
+    top: 20px;
+}
+
+.parent {
+    margin: 150px 50px ;
+    padding: 20px ;
+    position: relative;
+    background-color: #eee;
+    border-top: 2px red solid;
+    border-bottom: 2px red solid;
+    border-right: 2px blue solid;
+    border-left: 2px blue solid;
+}
+
+.top-left,.bottom-left,.top-right,.bottom-right{
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+   
+}
+.top-left{
+    position: absolute;
+    border-right:2px red solid ;
+    top: 0px;
+    left: 0px;
+    transform: translate(-20px,-20px);
+}
+
+.bottom-left {
+    position: absolute;
+    border-right:2px red solid ;
+    bottom: 0px;
+    left: 0px;
+    transform: translate(-20px,20px);
+}
+
+.top-right {
+    position: absolute;
+    border-left:2px red solid ;
+    bottom: 0px;
+    right: 0px;
+    transform: translate(20px,20px);
+}
+
+
+.bottom-right {
+    position: absolute;
+    border-left:2px red solid ;
+    top: 0px;
+    right: 0px;
+    transform: translate(20px,-20px);
+}
+
+ 
+ .parent-ul {
+    width: 400px;
+    margin: auto;
+    background-color: white;
+ }
+
+
+.parent-ul > li{ 
+    background-color: #eee;
+    margin: 20;
+    padding: 10px 20px;
+    display: block;
+    border-bottom: 20px white solid;
+    list-style: none;
+}
+
+
+.HTML  li,.css li,.js li{
+    background-color: white;
+    padding: 10px;
+   margin: 10px;
+    
+}
+
+
+.css li{
+    list-style-type:upper-roman;
+}
+
+
+.js li{
+    list-style-type: circle;
+    list-style-position:inside;
+    padding: 10px ;
+}
+
+
+table{
+    width: 700px;
+    margin: auto;
+    border-spacing: 0px;
+    background-color: #eee;
+    
+}
+
+caption {
+    font-weight: bold;
+    padding: 10px;
+}
+table thead td{
+background-color: black;
+padding: 20px;
+color: white;
+text-align: center;
+border-spacing: 0px;
+}
+
+td{
+   border: 1px white solid;
+   padding: 10px;
+   text-align: center;
+}
+
+.view{
+  text-decoration: none;
+  padding: 10px 10px;
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  margin: 10px;  
+  border-radius: 8px;
+}
+
+.delete{
+  text-decoration: none;
+  padding: 10px 10px;
+  display: inline-block;
+  background-color: red;
+  color: white;
+  margin: 10px;  
+  border-radius: 8px;
+}
