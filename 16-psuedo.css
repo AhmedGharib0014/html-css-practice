@@ -1,0 +1,121 @@
+
+
+
+.div1 {
+    width: 300px;
+    height: 60px;
+    background-color: wheat;
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.div1:empty{
+    background-color: red;
+}
+
+
+.u{
+    background-color: #eee;
+    width: 400px;
+    margin: auto;
+    position: relative;
+    padding: 20px 0px;
+    /* padding: 20px; */
+}
+
+/* .u::first-letter{
+    background-color: red;
+    padding: 10px;
+    color: white;
+    margin-top: -20px;
+} */
+
+
+/* .u::first-letter{
+    color: red;
+} */
+
+
+.u::first-letter{
+    color: white;
+    background-color: red;
+    position: absolute;
+    left: -20px;
+    padding: 10px;
+    margin-left: -10px;
+    top: 50%;
+    margin-top: -20px;
+} 
+
+
+
+
+.first{
+    background-color: #eee;
+    padding: 20px;
+    margin: 10px auto;
+    width: 400px;
+    position: relative;
+    border-left: 4px red solid;
+    border-right: 0px red solid;
+
+}
+
+.first::before{
+    content: attr(data-person);
+    position: absolute;
+    left: -120px;
+    top: 0;
+    padding: 20px;
+    width: 50px;
+    background-color: #eee;
+
+}
+
+.first::after{
+    content: "";
+    height: 0px;
+    width: 0px;
+    padding: 0;
+    margin: 0;
+    top: 50%;
+    margin-top:-15px ;
+    left: -30px;
+    position: absolute;
+    border-top: 15px transparent solid;
+    border-left: 15px transparent solid;
+    border-right: 15px red solid;
+    border-bottom: 15px transparent solid;
+    
+}
+
+p{
+    background-color: #eee;
+    padding: 20px;
+    margin: 10px auto;
+    width: 400px;
+    position: relative;
+    border-right: 4px red solid;
+}
+
+
+.parent{
+    counter-increment: my-counter;
+    position: relative;
+}
+
+p::before{
+    content: counter(my-counter);
+    position: absolute;
+    left: -50px;
+    top: 0;
+    color: white;
+    background-color: red;
+    padding: 20px;
+    
+}
