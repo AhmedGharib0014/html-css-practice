@@ -1,0 +1,67 @@
+
+
+
+
+.body > div{
+   counter-increment: my_counter;
+   position: relative;
+}
+
+
+
+
+div div{
+    width: 100px;
+    height: 100px;
+    counter-increment: my_counter;
+    display: inline-flex;
+    margin: 20px;
+    background-color: #eee;
+    align-content: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: -5px -5px 0 0 red , 
+    5px 5px 0 0 blue;
+    border: 3px black solid;
+   
+}
+
+
+
+div div::before{
+    content: counter(my_counter);
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    margin-left: -10px;
+    background-color: black;
+    color: white;
+    border: 3px black solid;
+    padding: 3px 5px;
+    border-radius: 50%;
+}
+
+
+div div::after{
+    content: "Element";
+}
+
+
+p {
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    box-shadow: inset 1px 1px 20px 0px black;
+    border: 1px black solid;
+    box-shadow: inset 1px 1px 20px 0px black;
+    border: 1px black solid;
+    border-top-left-radius: 8px 20px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 0px 0px;
+}
+
