@@ -2,6 +2,8 @@
 
 :root{
     --marginvalue : 0px;
+    --mainColor: #009688;
+    --mainPadding: 10px;
 }
 
 .parent{
@@ -36,3 +38,33 @@
 }  */
 
 
+
+
+.imp{
+    background-color: #eee !important;
+    text-align: center;
+    color: black !important;
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    position: relative;
+    border: none !important;
+    font-size: 0px !important;
+    font-weight: bold;
+}
+
+
+.imp::before{
+    content: "ELZERO";
+    font-size: 20px !important;
+    font-weight: bold;
+
+}
+
+
+.elm {
+    padding: var(--mainPadding,10px);
+    margin: var(--mainPadding,10px) auto;
+    color: var(--mainColor,red);
+    border: 5px var(--mainColor,black) solid;
+}
