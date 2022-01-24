@@ -1,0 +1,38 @@
+
+
+:root{
+    --marginvalue : 0px;
+}
+
+.parent{
+    background-color: #eee;
+    padding: 10px;
+    margin: 100px auto;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    transition-duration: .5s;
+}
+
+
+.parent:hover{
+    --marginvalue:20px;
+    margin: var(--marginvalue) auto;
+}
+
+
+
+ .child{
+    background-color: rgb(129, 119, 119);
+    padding: 20px;
+    transition-delay: .5s;
+    transition-duration: 1s;
+    margin: var(--marginvalue) auto;
+}
+
+/* 
+.child:hover{
+    margin: 20px auto;
+}  */
+
+
