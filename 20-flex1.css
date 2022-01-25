@@ -41,3 +41,48 @@
    
 
 }
+
+
+.parent1 {
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items:stretch
+}
+
+.parent1 div{
+    width: 150px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+
+.four{
+    order: 1;
+}
+
+.three{
+    order: 2;
+    align-self: flex-start;
+}
+
+.five{
+    order: 6;
+}
+.one{
+  order: 4;
+  align-self: flex-end;
+}
+.two{
+    order: 5;
+}
+
+.six{
+    order: 3;
+}
