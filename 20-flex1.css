@@ -1,0 +1,43 @@
+
+
+
+.elzero{
+    width: 100px;
+    height: 100px;
+    margin:  20px auto;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    border-radius: 50%;
+    border-top: 0px;
+    border-bottom: 0;
+    border-right: 7px red solid;
+    border-left: 7px blue solid;
+
+}
+
+
+.parent{
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+   align-content: space-between;
+
+}
+
+.child {
+    width: 150px; 
+    background-color: red;
+    color: white;
+    display: flex;
+    padding: 10px;
+   justify-content: center;
+   
+
+}
