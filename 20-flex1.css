@@ -86,3 +86,31 @@
 .six{
     order: 3;
 }
+
+
+
+.parent2 {
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-end;
+    
+}
+
+
+.parent2 div{
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+
+.two1{
+    align-self: stretch;  
+    max-width: calc(100% /2);
+}
