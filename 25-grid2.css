@@ -58,3 +58,24 @@
       grid-row: 3 / 6;
       grid-column: 2 / 2 span;
   }
+
+
+
+  .practice {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: space-between;
+    gap: 10px;
+  }
+
+
+  .practice div{
+      display: flex;
+      justify-content: center;
+      background-color: red;
+      color: white;
+  }
