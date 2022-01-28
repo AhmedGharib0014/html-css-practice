@@ -1,0 +1,116 @@
+
+:root {
+    --rotaion:-25deg;
+  }
+
+
+.div1 {
+    width: 300px;
+    height: 200px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 59px auto;
+    color: blue;
+    font-size: 30px;
+    position: relative;
+    font-weight: 900;
+}
+
+
+.div1::before{
+    content: '';
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    transform: rotate(8deg);
+    z-index: -1;
+}
+
+
+.div1::after{
+    content: '';
+    width: 300px;
+    height: 200px;
+    background-color: blue;
+    position: absolute;
+    transition-duration: 500ms;
+    transform: rotate(-8deg);
+    z-index: -2;
+}
+
+
+
+.div2 {
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 59px auto;
+    color: blue;
+    border-radius: 50%;
+    font-size: 30px;
+    position: relative;
+    font-weight: 900;
+}
+
+
+.div2::before{
+    content: '';
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border-width: 10px;
+    background-image:linear-gradient(to right, white 20% ,white 20%, red 20% , red ) ;
+    transform: rotate(var(--rotaion));
+    position: absolute;
+
+    transition-duration: 500ms;
+    z-index: -1;
+}
+
+
+.div2::after{
+    content: '';
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border-width: 10px;
+    background-image:linear-gradient(to left, white 20% ,white 20%, blue 20% , blue ) ;
+    transform: rotate(var(--rotaion));
+    position: absolute;
+    transition-delay: 500ms;
+    transition-duration: 500ms;
+    z-index: -2;
+}
+
+
+.div2:hover{
+    --rotaion : 315deg;
+}
+
+
+
+/* .div2:hover{
+    transform: scale(-1);
+} */
+
+
+/* 
+.div2::after{
+    content: '';
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border-color: blue red blue red;
+    border-width: 10px;
+    background-image:linear-gradient(to top, white 30% ,white 30%, red 30% , red ) ;
+    transform: rotate(deg);
+    position: absolute;
+    z-index: -1;
+} */
+
