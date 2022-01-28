@@ -1,0 +1,19 @@
+.parent {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: min-content 1fr 1fr min-content;
+    grid-template-rows: 1fr min-content;
+    gap: 10px 10px;
+  }
+
+
+  .parent div{
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
