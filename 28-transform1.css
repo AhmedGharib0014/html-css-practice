@@ -1,0 +1,51 @@
+
+
+
+
+
+
+
+div {
+    background-color:#FF5721;
+    padding: 10px;
+    width: 150px;
+    height: 90px;
+    font-weight: 900;
+    font-size: 40px;
+    margin: 100px auto;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective: 800px;
+}
+
+
+
+
+div::before{
+    content: "";
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    z-index: -1;
+    background-color:#FF5721;
+    transform:rotateZ(-10deg)  skewX(-25deg) ;
+}
+
+
+
+
+div::after{
+    content: "";
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    z-index: -1;
+    background-color:#FF5721;
+    transform:rotateZ(10deg)  skewX(25deg) ;
+}
+
+
+

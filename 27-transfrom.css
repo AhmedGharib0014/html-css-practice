@@ -95,22 +95,3 @@
 
 
 
-/* .div2:hover{
-    transform: scale(-1);
-} */
-
-
-/* 
-.div2::after{
-    content: '';
-    width: 240px;
-    height: 240px;
-    border-radius: 50%;
-    border-color: blue red blue red;
-    border-width: 10px;
-    background-image:linear-gradient(to top, white 30% ,white 30%, red 30% , red ) ;
-    transform: rotate(deg);
-    position: absolute;
-    z-index: -1;
-} */
-
