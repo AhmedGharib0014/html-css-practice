@@ -1,0 +1,155 @@
+
+
+
+
+
+@keyframes rotation-animation{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(1turn);
+
+    }
+}
+
+
+.first{
+    width: 50px;
+    height: 50px;
+    background-color:#eee;
+    margin: 50px auto;   
+    border: 5px red solid;
+    border-radius: 50%;
+    position: relative;
+    animation-name:rotation-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation-play-state: running; */
+    border-left: 5px transparent solid;
+}
+
+
+.first::after{
+    content: '';
+    width: 70px;
+    height: 70px;
+    border: 5px blue solid;
+    position:absolute ;
+    transform: translate(-15px,-15px);
+    z-index: -1;
+    border-radius: 50%;
+    border-top: 5px transparent solid;
+}
+
+
+.first::before{
+    content: '';
+    width: 90px;
+    height: 90px;
+    border: 5px green solid;
+    position:absolute ;
+    transform: translate(-25px,-25px);
+    z-index: -1;
+    border-radius: 50%;
+    border-right: 5px transparent solid;
+}
+
+
+
+
+.second{
+    width: 100px;
+    height: 100px;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;   
+}
+
+
+ .child1{
+    width: 50px;
+    height: 50px;
+    background-color:#eee;
+    border: 5px red solid;
+    border-radius: 50%;
+    position: absolute;
+    border-top: 5px transparent solid;
+    animation-name: rotation-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+ .child2{ 
+    width: 70px;
+    height: 70px;
+    border: 5px blue solid;
+    border-radius: 50%;
+    position: absolute;
+    border-top: 5px transparent solid;
+    animation-name: rotation-animation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+
+ .child3{
+    width: 90px;
+    height: 90px;
+    border: 5px green solid;
+    border-radius: 50%;
+    position: absolute;
+    border-top: 5px transparent solid;
+    animation-duration: 3s;
+    animation-name: rotation-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+
+ .second:hover>div{
+    animation-play-state: running;
+} 
+
+
+.first:hover{
+    animation-play-state: paused;
+}
+
+
+.third{
+
+    width: 50px;
+    height: 50px;
+    background-color:#eee;
+    margin: 50px auto;   
+    border: 5px black solid;
+    border-radius: 50%;
+    position: relative;
+    animation-name:rotation-animation;
+    animation-duration: 1s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-left: 5px transparent solid;
+
+}
