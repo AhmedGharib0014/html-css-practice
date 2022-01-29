@@ -74,7 +74,7 @@
     width: 25px;
     height: 100%;
     position: absolute;
-    left: -50px;
+    left: -60px;
     z-index: -1;
     background-color:#009688;
     transform: skewX(15deg) ;
@@ -91,4 +91,38 @@
     z-index: -1;
     background-color:#009688;
     transform: skewX(15deg) ;
+}
+
+
+.third {
+    background-color:#607D8A;
+   
+    width: 200px;
+    height:150px;
+    margin: 100px auto;
+    display: flex;
+    color: white;
+    border-bottom: 5px black solid;
+    position: relative;
+    perspective: 800px;  
+}
+
+
+.third::after{
+    content: "Elzero";
+    position: absolute;
+    left: 5px;
+    bottom:5px;
+    color: white;
+}
+
+
+
+.third::before{
+    content: "";
+    width: 135px;
+    height: 135px;
+    transform: translateY(-100px) rotateZ(45deg) translateX(40px); 
+    border: 5px white solid;  
+    background-color: black;
 }
