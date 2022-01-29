@@ -1,0 +1,6 @@
+
+
+
+div>p,div>div:not(div:first-of-type):not(h3 ~ div){
+    color: red;
+}

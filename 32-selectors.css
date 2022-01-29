@@ -1,0 +1,13 @@
+
+
+
+
+
+
+.parent .baby:only-child{
+    color: red;
+}
+
+p ~ div[title]:not(div[class],.parent div){
+    color: red;
+}

@@ -1,0 +1,13 @@
+
+
+
+
+.main.red:not(p){
+    color: red;
+}
+
+
+
+div:nth-child(2){
+    color: red;
+}

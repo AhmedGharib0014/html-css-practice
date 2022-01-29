@@ -1,0 +1,12 @@
+
+
+div:nth-child(2)>div[title]{
+color: red;
+}
+
+
+
+
+hr~div:not(div[class])>div:nth-last-of-type(2){
+    color: red;
+}
